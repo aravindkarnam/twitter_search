@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="twitterApp.js"></script>
+
+</head>
+<body ng-app="myApp">
+<div ng-app="myApp" ng-controller="ctrl">
+    <input type="text" ng-model="query">
+    <button type="submit" ng-click="search()">search</button>
+    <li ng-repeat="tweet in tweets">
+        <p>{{tweet.text}}</p>
+    </li>
+</div>
+</body>
+</html>
